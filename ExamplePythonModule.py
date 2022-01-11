@@ -8,8 +8,27 @@ import math
 # LabVIEW int32.
 # Similarly, when called from PythonNode_AddTwoDoubles.vi, the arguments a and b are
 # python floats. So is the return value which is converted into a LabVIEW double by
-# the call python node. 
+# the call python node.
+# https://realpython.com/beginners-guide-python-turtle/ 
 def Add(a, b):
+	import turtle;
+	s = turtle.getscreen();
+	# s.setup(400,400);
+	t = turtle.Turtle();
+	t.speed(10);
+	for i in range(10):
+		t.fd(100);
+		t.lt(90);
+		t.fd(10);
+		t.lt(90);
+		t.fd(100);
+		t.rt(90);
+		t.fd(10);
+		t.rt(90);
+	
+	t.penup();
+	t.circle(60);
+
 	return a+b;
 	
 # ConcatenateStrings(str1, str2) is called from PythonNode_ConcatenateTwoStrings.vi.
