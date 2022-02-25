@@ -12,6 +12,11 @@ import math
 # https://realpython.com/beginners-guide-python-turtle/ 
 def Add(a, b):
 	import turtle;
+
+	# for i in range(3):
+	# 	turtle.circle(40);
+	# 	turtle.right(120);
+
 	s = turtle.getscreen();
 	# s.setup(400,400);
 	t = turtle.Turtle();
@@ -29,6 +34,7 @@ def Add(a, b):
 	t.penup();
 	t.circle(60);
 
+	turtle.exitonclick();
 	return a+b;
 	
 # ConcatenateStrings(str1, str2) is called from PythonNode_ConcatenateTwoStrings.vi.
