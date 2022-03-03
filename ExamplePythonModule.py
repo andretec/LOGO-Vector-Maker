@@ -20,9 +20,10 @@ def Add(a, b):
 	s = turtle.getscreen();
 	# s.setup(400,400);
 	t = turtle.Turtle();
+	
 	t.speed(10);
 	for i in range(10):
-		t.fd(100);
+		t.fd(100); 
 		t.lt(90);
 		t.fd(10);
 		t.lt(90);
@@ -32,7 +33,14 @@ def Add(a, b):
 		t.rt(90);
 	
 	t.penup();
-	t.circle(60);
+	t.rt(90);
+	t.fd(150);
+
+	# t.circle(60);
+
+	fonte1 = ("Comic Sans", 20, "italic");
+	turtle.write("Clique to contine ...", False, "center", fonte1);
+	turtle.title("My Turtle Program")
 
 	turtle.exitonclick();
 	return a+b;
